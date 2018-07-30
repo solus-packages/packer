@@ -1,0 +1,27 @@
+name       : packer
+version    : 1.2.5
+release    : 1
+source     :
+    - https://github.com/hashicorp/packer/archive/v1.2.5.tar.gz : 86408d212a0e0b9c7a0dc93e4835a900569ad7e7bfc45cd633d7c6560f2f8d2b
+license    : MPL-2.0
+component  : programming.tools
+summary    : Packer is a tool for building identical machine images for multiple platforms from a single source configuration.
+description: |
+    Packer is a tool for building identical machine images for multiple platforms from a single source configuration.
+
+    Packer is lightweight, runs on every major operating system, and is highly performant, creating machine images for multiple platforms in parallel. Packer comes out of the box with support for many platforms, the full list of which can be found at https://www.packer.io/docs/builders/index.html.
+
+    Support for other platforms can be added via plugins.
+
+    The images that Packer creates can easily be turned into Vagrant boxes.
+builddeps  :
+    - golang
+build      : |
+    mkdir -p src/github.com/hashicorp
+    export GOPATH=`pwd`
+    ln -sv `pwd` src/github.com/hashicorp/packer
+    cd src/github.com/hashicorp/packer
+    go build -o packer-binary
+install    : |
+    cd src/github.com/hashicorp/packer
+    install -Dm 00755 packer-binary $installdir/usr/bin/packer

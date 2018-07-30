@@ -1,0 +1,46 @@
+<PISI>
+    <Source>
+        <Name>packer</Name>
+        <Packager>
+            <Name>Mike Chau</Name>
+            <Email>git@mc-devel.com</Email>
+        </Packager>
+        <License>MPL-2.0</License>
+        <PartOf>programming.tools</PartOf>
+        <Summary xml:lang="en">Packer is a tool for building identical machine images for multiple platforms from a single source configuration.</Summary>
+        <Description xml:lang="en">Packer is a tool for building identical machine images for multiple platforms from a single source configuration.
+
+Packer is lightweight, runs on every major operating system, and is highly performant, creating machine images for multiple platforms in parallel. Packer comes out of the box with support for many platforms, the full list of which can be found at https://www.packer.io/docs/builders/index.html.
+
+Support for other platforms can be added via plugins.
+
+The images that Packer creates can easily be turned into Vagrant boxes.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>packer</Name>
+        <Summary xml:lang="en">Packer is a tool for building identical machine images for multiple platforms from a single source configuration.</Summary>
+        <Description xml:lang="en">Packer is a tool for building identical machine images for multiple platforms from a single source configuration.
+
+Packer is lightweight, runs on every major operating system, and is highly performant, creating machine images for multiple platforms in parallel. Packer comes out of the box with support for many platforms, the full list of which can be found at https://www.packer.io/docs/builders/index.html.
+
+Support for other platforms can be added via plugins.
+
+The images that Packer creates can easily be turned into Vagrant boxes.
+</Description>
+        <PartOf>programming.tools</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/packer</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-07-22</Date>
+            <Version>1.2.5</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Mike Chau</Name>
+            <Email>git@mc-devel.com</Email>
+        </Update>
+    </History>
+</PISI>
