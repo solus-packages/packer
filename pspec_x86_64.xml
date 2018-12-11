@@ -2,8 +2,8 @@
     <Source>
         <Name>packer</Name>
         <Packager>
-            <Name>Mike Chau</Name>
-            <Email>git@mc-devel.com</Email>
+            <Name>Philipp Trulson</Name>
+            <Email>philipp@trulson.de</Email>
         </Packager>
         <License>MPL-2.0</License>
         <PartOf>programming.tools</PartOf>
@@ -35,12 +35,12 @@ The images that Packer creates can easily be turned into Vagrant boxes.
         </Files>
     </Package>
     <History>
-        <Update release="3">
-            <Date>2018-11-03</Date>
-            <Version>1.3.2</Version>
+        <Update release="4">
+            <Date>2018-12-09</Date>
+            <Version>1.3.3</Version>
             <Comment>Packaging update</Comment>
-            <Name>Mike Chau</Name>
-            <Email>git@mc-devel.com</Email>
+            <Name>Philipp Trulson</Name>
+            <Email>philipp@trulson.de</Email>
         </Update>
     </History>
 </PISI>
